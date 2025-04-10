@@ -829,30 +829,105 @@
     box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
   }
   
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 110vh; /* Aumenta a altura para 110% da altura da viewport */
+    padding: 40px; /* Aumenta o espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo para destacar */
+  }
+  
+  .contact-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* Espaçamento entre os itens */
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre o ícone e o texto */
+  }
+  
+  .contact-icon {
+    font-size: 24px;
+    color: #007bff; /* Cor do ícone */
+  }
+  
   /* Footer */
   .footer {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
     background-color: var(--black);
     color: var(--white);
     padding: 4rem 0 1rem;
+    text-align: center; /* Centraliza o texto */
   }
   
   .footer-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row; /* Organiza os itens em linha */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    gap: 2rem; /* Espaçamento entre as colunas */
   }
   
-  @media (min-width: 768px) {
-    .footer-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .footer-about,
+  .footer-links,
+  .footer-contact {
+    flex: 1; /* Faz com que cada coluna ocupe o mesmo espaço */
   }
   
-  @media (min-width: 992px) {
-    .footer-grid {
-      grid-template-columns: repeat(4, 1fr);
-    }
+  .footer-about {
+    text-align: left; /* Alinha o conteúdo à esquerda */
+  }
+  
+  .footer-links {
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .footer-contact {
+    text-align: left; /* Alinha o conteúdo à direita */
+  }
+  
+  .footer-contact h4 {
+    margin-bottom: 1rem;
+    margin: left 0; ; /* Espaçamento entre o título e as informações */
+  }
+  
+  .footer-contact .btn {
+    margin-top: 1rem; /* Adiciona espaçamento acima do botão */
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* Espaçamento entre o ícone e o texto */
+    background-color: var(--gold);
+    color: var(--black);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-contact .btn:hover {
+    background-color: var(--dark-gold);
+    color: var(--white);
+  }
+  
+  .footer-about h3 {
+    font-size: 1.5rem; /* Ajusta o tamanho do título */
+    margin-bottom: 1rem; /* Reduz o espaçamento inferior */
+  }
+  
+  .footer-about p {
+    font-size: 0.875rem; /* Reduz o tamanho do texto */
+    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+    margin-bottom: 1rem; /* Reduz o espaçamento inferior */
   }
   
   .footer-about p {
@@ -875,19 +950,20 @@
   }
   
   .footer h4 {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem; /* Espaçamento entre o título e o conteúdo */
     position: relative;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.5rem; /* Espaçamento para a linha */
   }
   
   .footer h4::after {
     content: '';
     position: absolute;
-    left: 0;
+    left: 50%; /* Centraliza a linha em relação ao título */
+    transform: translateX(-50%); /* Ajusta para o centro */
     bottom: 0;
     height: 2px;
-    width: 50px;
-    background-color: var(--gold);
+    width: 50px; /* Largura da linha */
+    background-color: var(--gold); /* Cor da linha */
   }
   
   .footer-links ul, .footer-contact ul {
@@ -949,8 +1025,9 @@
   }
   
   .footer-bottom {
-    padding-top: 1.5rem;
+    margin-top: 2rem;
     text-align: center;
+    padding-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--medium-gray);
   }
