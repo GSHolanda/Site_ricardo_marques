@@ -183,4 +183,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       });
     });
+
+    window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768 && mobileMenu.classList.contains('active')) {
+      mobileMenu.classList.remove('active');
+      menuButton.innerHTML = '<i class="fas fa-bars"></i>';
+    }
+  });
+      
   });

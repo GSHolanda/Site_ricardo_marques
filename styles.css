@@ -20,10 +20,11 @@
   
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
-  
+
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
     line-height: 1.6;
     color: var(--dark-gray);
     background-color: var(--white);
@@ -153,7 +154,7 @@
     transform: translateY(30px);
     transition: all 0.8s ease;
   }
-  
+
   .reveal.active {
     opacity: 1;
     transform: translateY(0);
@@ -217,6 +218,10 @@
   .logo-gold {
     color: var(--gold);
   }
+
+  .logo-white {
+    color: white;
+  }
   
   .logo-yellow {
     color: var(--yellow);
@@ -228,6 +233,12 @@
 
   .desktop-menu {
     display: none;
+  }
+
+  @media (max-width: 420px) {
+  h1   { font-size: clamp(1.9rem, 7vw, 2.4rem); }
+  h2   { font-size: clamp(1.6rem, 6vw, 2rem); }
+  .hero p { font-size: 1rem; }
   }
   
   @media (min-width: 768px) {
@@ -248,9 +259,12 @@
   
   .mobile-menu-button {
     display: block;
-    color: var(--dark-gray);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-left: auto;   /* empurra para a direita, mas dentro do container */
+    background: transparent;
   }
+  .navbar.scrolled .mobile-menu-button { color: var(--dark-gray); }
   
   @media (min-width: 768px) {
     .mobile-menu-button {
@@ -259,26 +273,21 @@
   }
   
   .mobile-menu {
-    position: fixed;
-    top: 0;
+    position: absolute;      /* fica logo abaixo do header */
+    top: 100%;               /* encosta embaixo do nav */
     left: 0;
     right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.95);
+    background: rgba(255,255,255,.95);
     backdrop-filter: blur(10px);
-    display: flex;
+    display: none;           /* some até ser aberto */
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    z-index: 999;
-    transform: translateX(100%);
-    transition: all 0.3s ease;
+    gap: 1rem;
+    padding: 1.25rem 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,.06);
+    text-align: center;
   }
-  
-  .mobile-menu.active {
-    transform: translateX(0);
-  }
+  .mobile-menu.active { display: flex; }
+
   
   .mobile-menu-item {
     font-size: 1.5rem;
@@ -744,9 +753,9 @@
   
   /* Contact Section */
   .contact-grid {
-    display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    display: flex
   }
   
   @media (min-width: 992px) {
@@ -755,7 +764,7 @@
     }
   }
   
-  .contact-info, .contact-form {
+  .contact-info {
     padding: 2.5rem;
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
@@ -763,26 +772,32 @@
     border-radius: 1.5rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px; /* largura máxima para controle visual */
   }
   
   .contact-item {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-  }
-  
-  .contact-icon {
-    width: 50px;
-    height: 50px;
-    background-color: rgba(212, 175, 55, 0.1);
-    border-radius: 0.5rem;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 1rem;
-    color: var(--dark-gold);
+    gap: 0.75rem; /* pequena distância entre ícone e texto */
+    text-align: left; /* alinha texto à esquerda */
+    width: 100%; /* ocupa toda a largura disponível */
+    
   }
-  
+    
+  .contact-icon {
+    width: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 24px;
+    color: #007bff; /* Cor do ícone */
+  }
+
   .contact-item a {
     color: var(--dark-gold);
   }
@@ -791,6 +806,12 @@
     text-decoration: underline;
   }
   
+  .contact-item > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
   .form-row {
     display: grid;
     grid-template-columns: 1fr;
@@ -852,11 +873,7 @@
     align-items: center;
     gap: 10px; /* Espaçamento entre o ícone e o texto */
   }
-  
-  .contact-icon {
-    font-size: 24px;
-    color: #007bff; /* Cor do ícone */
-  }
+
   
   /* Footer */
   .footer {
@@ -898,7 +915,7 @@
   
   .footer-contact h4 {
     margin-bottom: 1rem;
-    margin: left 0; ; /* Espaçamento entre o título e as informações */
+    margin-left: 0; ; /* Espaçamento entre o título e as informações */
   }
   
   .footer-contact .btn {
@@ -984,9 +1001,24 @@
   
   .footer-contact li {
     display: flex;
-    align-items: center;
+    align-items:flex-start;  
+    flex-wrap:wrap; 
+    gap:0.75rem;  
     margin-bottom: 1rem;
     color: var(--light-gray);
+  }
+
+  
+
+  .footer-contact li a,
+  .footer-contact li span{
+    word-break:break-word;    /* força quebra em palavras sem hífens */
+    overflow-wrap:anywhere;   /* fallback moderno para navegadores novos */
+  }
+
+  .footer-contact li a{
+  display:inline-block;
+  max-width:100%;
   }
   
   .footer-contact i {

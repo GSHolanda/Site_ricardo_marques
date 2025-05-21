@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Empresário X - Portfolio Pessoal</title>
+    <title>Jospe Ricardo Marques</title>
     <meta name="description" content="Portfolio pessoal do Empresário X" />
     <link rel="stylesheet" href="styles.css" />
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="container">
+        <!-- Logo -->
         <a href="#" class="logo">
-          <span class="logo-gold">José Ricardo </span><span class="logo-yellow">Marques</span>
+          <span class="logo-white">José Ricardo </span><span class="logo-gold">Marques</span>
         </a>
 
         <!-- Desktop Menu -->
@@ -26,20 +28,20 @@
           <a href="#contact" class="menu-item">Contato</a>
         </div>
 
-        <!-- Mobile Menu Button -->
+        <!-- Botão Mobile -->
         <button class="mobile-menu-button">
           <i class="fas fa-bars"></i>
         </button>
-      </div>
 
-      <!-- Mobile Menu -->
-      <div class="mobile-menu">
-        <a href="#home" class="mobile-menu-item">Início</a>
-        <a href="#about" class="mobile-menu-item">Sobre</a>
-        <a href="#achievements" class="mobile-menu-item">Conquistas</a>
-        <a href="#testimonials" class="mobile-menu-item">Depoimentos</a>
-        <a href="#news" class="mobile-menu-item">Notícias</a>
-        <a href="#contact" class="mobile-menu-item">Contato</a>
+        <!-- Menu Mobile (agora dentro do .container) -->
+        <div class="mobile-menu">
+          <a href="#home" class="mobile-menu-item">Início</a>
+          <a href="#about" class="mobile-menu-item">Sobre</a>
+          <a href="#achievements" class="mobile-menu-item">Conquistas</a>
+          <a href="#testimonials" class="mobile-menu-item">Depoimentos</a>
+          <a href="#news" class="mobile-menu-item">Notícias</a>
+          <a href="#contact" class="mobile-menu-item">Contato</a>
+        </div>
       </div>
     </nav>
 
@@ -50,11 +52,10 @@
           Ricardo <span class="text-gold">Marques</span>
         </h1>
         <p class="reveal">
-          Visionário. Inovador. Líder. Transformando ideias em empresas de sucesso.
+          Transformando ideias em empresas de sucesso.
         </p>
         <div class="hero-buttons reveal">
           <a href="#about" class="btn btn-primary">Conheça minha história</a>
-          <a href="#contact" class="btn btn-outline">Entre em contato</a>
         </div>
       </div>
       
@@ -128,12 +129,13 @@
     <section id="achievements" class="section bg-light">
       <div class="section-header">
         <h2 class="reveal">
-          Conquistas <span class="text-blue">Notáveis</span>
+          Uma trajetória marcada por
+        </h2>
+        <h2 class="reveal">
+         <span class="text-blue">Conquistas e Reconhecimentos.</span>
         </h2>
         <div class="divider reveal"></div>
-        <p class="reveal">
-          Uma trajetória marcada por conquistas e reconhecimentos.
-        </p>
+
       </div>
 
       <div class="achievements-grid">
@@ -168,7 +170,14 @@
       </div>
 
       <div class="career-box reveal">
-        <div class="career-grid">
+        <div class="section-header">
+          <h2 class="reveal">
+          <span class="text-blue">Currículo</span>
+          </h2>
+          <div class="divider reveal"></div>
+
+        </div>
+      <div class="career-grid">
           <div class="timeline">
             <h3>Trajetória Profissional</h3>
             <div class="timeline-item">
@@ -320,17 +329,62 @@
             </a>
           </div>
         </div>
-
-        <div class="news-card reveal">
+           <div class="news-card reveal">
           <div class="news-image">
-            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1412&auto=format&fit=crop" alt="Palestra sobre Liderança" />
+            <img src="marques-condecorado.jpg" alt="Novo Investimento" />
           </div>
           <div class="news-content">
             <div class="news-meta">
-              <span><i class="far fa-calendar"></i> 28 de junho de 2024</span>
+              <span><i class="far fa-calendar"></i>26 de fevereiro, 2024</span>
+            </div>
+            <h3>Advogado é condecorado pelo Governador de Brasília</h3>
+            <p>José Ricardo Marques recebeu homenagem no gabinete da Comandante-Geral do CBMDF, Monica de Mesquita Miranda</p>
+            <a href="https://odia.ig.com.br/niteroi/2024/02/6799785-advogado-e-condecorado-pelo-governador-de-brasilia.html" class="read-more">
+              Leia mais <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+         <div class="news-card reveal">
+          <div class="news-image">
+            <img src="marques-sarney.jpeg" alt="Novo Investimento" />
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span><i class="far fa-calendar"></i> 15 de Março, 2021</span>
+            </div>
+            <h3>José Ricardo Marques encontra ex-presidente José Sarney</h3>
+            <p>O consultor foi recebido por Sarney e sua filha, a ex-Governadora do Maranhão, Roseana Sarney</p>
+            <a href="https://odia.ig.com.br/sao-goncalo/2024/07/6882299-jose-ricardo-marques-encontra-ex-presidente-jose-sarney.html" class="read-more">
+              Leia mais <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="news-card reveal">
+          <div class="news-image">
+            <img src="marques-foto.jpg" alt="Palestra sobre Liderança" />
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span><i class="far fa-calendar"></i>15 de julho, 2024</span>
             </div>
             <h3>José Ricardo Marques e Gilberto Oliveira Lins Neto recebem título de Cidadão Ludovicense</h3>
             <p>A Câmara Municipal de São Luís concedeu o título de cidadão ludovicense ao carioca José Ricardo Marques e ao baiano Gilberto Oliveira Lins Neto.</p>
+            <a href="https://www.camara.slz.br/jose-ricardo-marques-e-gilberto-oliveira-lins-neto-recebem-titulo-de-cidadão-ludovicense/" class="read-more">
+              Leia mais <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="news-card reveal">
+          <div class="news-image">
+            <img src="marques-tecnologia.jpeg" alt="Palestra sobre Liderança" />
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span><i class="far fa-calendar"></i>28 de fevereiro, 2024</span>
+            </div>
+            <h3>Uso de tecnologia de alta performance para museus é debatido</h3>
+            <p>Presidente do Instituto Joaosinho Trinta, José Ricardo Marques, participou de encontro</p>
             <a href="https://www.camara.slz.br/jose-ricardo-marques-e-gilberto-oliveira-lins-neto-recebem-titulo-de-cidadão-ludovicense/" class="read-more">
               Leia mais <i class="fas fa-external-link-alt"></i>
             </a>
@@ -346,9 +400,6 @@
           Entre em <span class="text-blue">Contato</span>
         </h2>
         <div class="divider reveal"></div>
-        <p class="reveal">
-          Estou disponível para novas oportunidades, parcerias e consultorias.
-        </p>
       </div>
 
       <div class="contact-grid">
@@ -405,7 +456,6 @@
           <!-- José Ricardo Marques à esquerda -->
           <div class="footer-about">
             <h3>José Ricardo <span class="text-gold">Marques</span></h3>
-            <p>Empresário e Consultor</p>
           </div>
 
           <!-- Links Rápidos centralizados -->
@@ -439,7 +489,10 @@
             <!-- Botão do LinkedIn -->
              <div class="social-links">
               <a href="https://linkedin.com/in/jose-ricardo-marques"><i class="fab fa-linkedin"></i></a>
-             </div>
+              
+              <a><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
           </div>
         </div>
 
