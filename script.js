@@ -9,20 +9,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const desktopMenu = document.querySelector('.desktop-menu');
 
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 20) {
-        navbar.classList.add('scrolled');
-        desktopMenu.classList.add('scrolled');
+   window.addEventListener('scroll', function () {
+  const navbar = document.querySelector('.navbar');
+  const desktopMenu = document.querySelector('.desktop-menu');
+  const logoWhite = document.querySelector('.logo-white'); // CORRETO
 
-      } else {
-        navbar.classList.remove('scrolled');
-        desktopMenu.classList.remove('scrolled');
-        
-      }
-      
-      // Scroll reveal animation
-      revealElements();
-    });
+  if (window.scrollY > 20) {
+    navbar?.classList.add('scrolled');
+    desktopMenu?.classList.add('scrolled');
+    logoWhite?.classList.add('scrolled');
+  } else {
+    navbar?.classList.remove('scrolled');
+    desktopMenu?.classList.remove('scrolled');
+    logoWhite?.classList.remove('scrolled');
+  }
+
+  // Scroll reveal animation
+  revealElements();
+});
+
     
     // Mobile menu toggle
     const menuButton = document.querySelector('.mobile-menu-button');
