@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artigos – José Ricardo Marques</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-white">José Ricardo</span>
+        <span class="logo-gold">Marques</span>
+      </a>
+
+      <div class="desktop-menu">
+        <a href="index.html#home" class="menu-item">Início</a>
+        <a href="index.html#about" class="menu-item">Sobre</a>
+        <a href="index.html#achievements" class="menu-item">Conquistas</a>
+        <a href="index.html#news" class="menu-item">Notícias</a>
+        <a href="compliance.html" class="menu-item">Compliance</a>
+        <a href="biografia.html" class="menu-item menu-active">Biografia</a>
+        <a href="index.html#contact" class="menu-item">Contato</a>
+      </div>
+
+      <button class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="mobile-menu">
+        <a href="index.html#home" class="mobile-menu-item">Início</a>
+        <a href="index.html#about" class="mobile-menu-item">Sobre</a>
+        <a href="index.html#achievements" class="mobile-menu-item">Conquistas</a>
+        <a href="index.html#news" class="mobile-menu-item">Notícias</a>
+        <a href="compliance.html" class="mobile-menu-item">Compliance</a>
+        <a href="biografia.html" class="mobile-menu-item">Biografia</a>
+        <a href="index.html#contact" class="mobile-menu-item">Contato</a>
+      </div>
+    </div>
+  </nav>
+ <section id="news" class="section bg-light">
+      <div class="section-header">
+        <h2 class="reveal">
+          <span class="text-gold">Artigos</span>
+        </h2>
+        <div class="divider reveal"></div>
+        <p class="reveal">
+          Acompanhe os artigos escritos por José Ricardo Marques           
+
+        </p>
+      </div>
+
+      <div class="news-grid">
+         <div class="news-card reveal">
+          <div class="news-image">
+            <img src="images/noticias/AnalisePoliticoRJ.jpeg" alt="Expansão de Negócios" />
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span><i class="far fa-calendar"></i>12 DE JANEIRO DE 2026</span>
+            </div>
+            <h3>Análise do cenário político do Rio De Janeiro</h3>
+            <p>Planejar no Rio de Janeiro é lidar com um ambiente político altamente dinâmico, marcado pela judicialização, rearranjos institucionais e decisões estratégicas que mudam o jogo em tempo real. O cenário atual aponta para uma transição no Executivo estadual, disputas relevantes ao Senado e uma Assembleia Legislativa no centro das articulações de poder. </p>
+            <a onclick="openNews('noticia1')" class="read-more" style="cursor:pointer;">
+                Leia mais <i class="fas fa-external-link-alt"></i>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+      <div class="container">
+
+        <div class="footer-grid">
+          <div class="footer-about">
+            <h3>José Ricardo <span class="text-gold">Marques</span></h3>
+          </div>
+
+          <div class="footer-links">
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li><a href="index.html#home">Início</a></li>
+              <li><a href="index.html#about">Sobre</a></li>
+              <li><a href="index.html#achievements">Conquistas</a></li>
+              <li><a href="index.html#contact">Contato</a></li>
+              <li><a href="compliance.html">Nada Consta</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contato</h4>
+            <ul>
+              <li><i class="fas fa-envelope"></i> contato@INDEX.com.br</li>
+              <li><i class="fas fa-phone"></i> +55 (61) 35626972</li>
+              <li><i class="fas fa-map-marker-alt"></i> Brasília, DF</li>
+            </ul>
+
+            <div class="social-links">
+              <a href="https://linkedin.com/in/jose-ricardo-marques"><i class="fab fa-linkedin"></i></a>
+              <a><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> Ricardo Marques. Todos os direitos reservados.</p>
+        </div>
+
+      </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

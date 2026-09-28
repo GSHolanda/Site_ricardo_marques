@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "sitemarques",
+			"path": "."
+		},
+		{
+			"name": "nada-consta-marques",
+			"path": "../../nada-consta-marques/nada-consta-marques"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sitemarques"
+	}
+}

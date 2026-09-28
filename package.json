@@ -1,0 +1,12 @@
+{
+  "name": "sitemarques",
+  "version": "1.0.0",
+  "main": "news-data.js",
+"scripts": {
+  "build": "rimraf dist && mkdir dist && robocopy . dist /E /XD node_modules dist .git /XF package.json package-lock.json *.log & if %ERRORLEVEL% LEQ 7 (exit 0) else (exit %ERRORLEVEL%)"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
