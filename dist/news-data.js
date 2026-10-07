@@ -1,5 +1,146 @@
 // news-data.js
 const internalNews = {
+  noticia16: {
+    image: "images/noticias/eleicoes-2026-artigo.png",
+    title: "Eleições 2026: o Brasil que saiu das urnas não é o mesmo que entrou nelas",
+    date: "7 de outubro de 2026",
+    text: `
+<p><strong>Eleições 2026: o Brasil que saiu das urnas não é o mesmo que entrou nelas</strong></p>
+
+<p>O primeiro turno das eleições de 2026 precisa ser analisado para além dos números.</p>
+
+<p>Flávio Bolsonaro terminou à frente do presidente Lula, com 47,03% dos votos válidos contra 45,16%. A diferença pode não ser definitiva eleitoralmente, mas é profundamente significativa politicamente.</p>
+
+<p>Em 2018, assistimos ao surgimento do bolsonarismo como um movimento de direita liderado por Jair Bolsonaro. Oito anos depois, mesmo após sua derrota em 2022, inelegibilidade e condenação, o fenômeno político não desapareceu.</p>
+
+<p>Ao contrário: demonstrou capacidade de sobrevivência e transferência eleitoral.</p>
+
+<p>Esse talvez seja um dos principais acontecimentos políticos de 2026.</p>
+
+<p>Flávio Bolsonaro chega ao segundo turno não apenas carregando o sobrenome do pai, mas liderando uma força política que se consolidou nacionalmente e ampliou sua presença no Congresso.</p>
+
+<p>Do outro lado, o resultado expõe um problema que a esquerda brasileira terá de enfrentar: a renovação de suas lideranças.</p>
+
+<p>Lula continua sendo uma das maiores lideranças populares da história brasileira. Mas, aos 80 anos e buscando um quarto mandato presidencial, sua permanência como principal referência eleitoral demonstra também o quanto seu campo político permanece dependente de sua liderança.</p>
+
+<p>Movimentos políticos que não constroem sucessores acabam transformando a força de seus grandes personagens em dependência.</p>
+
+<p><strong>O Congresso também falou</strong></p>
+
+<p>Talvez seja um erro analisar 2026 olhando apenas para a Presidência.</p>
+
+<p>O fortalecimento da direita no Congresso — particularmente no Senado — poderá ser tão importante quanto o resultado presidencial.</p>
+
+<p>O PL deverá iniciar a próxima legislatura com 28 senadores, formando a maior bancada partidária da Casa.</p>
+
+<p>E isso importa muito.</p>
+
+<p>É o Senado que aprova indicações para o Supremo Tribunal Federal e possui competência constitucional para processar e julgar ministros da Corte nos crimes de responsabilidade.</p>
+
+<p>Uma eventual vitória de Flávio Bolsonaro, acompanhada de um Senado predominantemente conservador, poderá estabelecer uma nova correlação de forças entre Executivo, Legislativo e Judiciário.</p>
+
+<p>Não significa afirmar que haverá impeachment de ministros do STF. O procedimento exige requisitos jurídicos e maioria qualificada de dois terços do Senado.</p>
+
+<p>Significa reconhecer que o ambiente político-institucional poderá ser profundamente diferente.</p>
+
+<p><strong>E o STF entrou definitivamente no debate político</strong></p>
+
+<p>Nos últimos anos, o Supremo passou a ocupar espaço incomum no centro da vida política brasileira.</p>
+
+<p>Decisões envolvendo eleições, redes sociais, parlamentares, lideranças políticas, os acontecimentos de 8 de janeiro e, mais recentemente, as repercussões institucionais do caso Banco Master contribuíram para aumentar sua exposição.</p>
+
+<p>O problema ultrapassa a discussão sobre esta ou aquela decisão.</p>
+
+<p>A questão central é confiança institucional.</p>
+
+<p>A Justiça não precisa apenas ser independente. Precisa ser percebida pela sociedade como independente.</p>
+
+<p>Quando parcela expressiva da população começa a interpretar decisões judiciais pela ótica das conveniências políticas, temos um problema institucional que nenhuma democracia deveria ignorar.</p>
+
+<p>Não afirmo que ministros decidam segundo conveniências políticas — uma acusação dessa natureza exigiria demonstração objetiva.</p>
+
+<p>Mas considero indispensável discutir se determinadas decisões, seus tempos e suas consequências estão produzindo na sociedade uma perigosa percepção de politização da Justiça.</p>
+
+<p>E percepção institucional também produz consequências políticas.</p>
+
+<p><strong>O Rio de Janeiro é o exemplo mais emblemático</strong></p>
+
+<p>A situação fluminense beira o surrealismo institucional.</p>
+
+<p>Temos um presidente do Tribunal de Justiça exercendo interinamente o governo enquanto o STF ainda discute se a eleição para o mandato-tampão deve ser direta ou indireta.</p>
+
+<p>Agora surge a controvérsia envolvendo Anthony Garotinho.</p>
+
+<p>Seus votos foram registrados como anulados sub judice. Douglas Ruas terminou a apuração com 49,27%.</p>
+
+<p>Com a desistência de Garotinho de seu recurso, a exclusão definitiva desses votos poderia elevar Ruas para aproximadamente 50,89% dos votos válidos — resultado suficiente, matematicamente, para uma vitória no primeiro turno.</p>
+
+<p>Mas os efeitos jurídicos ainda dependem da definição da Justiça Eleitoral.</p>
+
+<p>O Judiciário existe justamente para solucionar controvérsias.</p>
+
+<p>Mas existe uma questão igualmente importante: o tempo da Justiça não pode acabar modificando o tempo da democracia.</p>
+
+<p>Segurança jurídica significa também previsibilidade e decisões tempestivas.</p>
+
+<p><strong>Flávio Bolsonaro é favorito?</strong></p>
+
+<p>Neste momento, sim.</p>
+
+<p>Ele terminou o primeiro turno à frente, aproxima-se da maioria absoluta e começa a receber apoios de candidatos e lideranças da direita e centro-direita.</p>
+
+<p>Mas eleição não é matemática.</p>
+
+<p>Lula recebeu quase 54 milhões de votos e possui estrutura política nacional, enorme capacidade de mobilização e uma trajetória eleitoral que impede qualquer análise séria de considerar o segundo turno encerrado antecipadamente.</p>
+
+<p>Os eleitores dos candidatos eliminados, a rejeição aos dois finalistas e, principalmente, os milhões que não compareceram às urnas poderão decidir a eleição.</p>
+
+<p>Portanto, Flávio entra favorito.</p>
+
+<p>Mas não eleito.</p>
+
+<p><strong>Uma mudança de ciclo?</strong></p>
+
+<p>Talvez esta seja a pergunta mais importante.</p>
+
+<p>Independentemente de quem vencer o segundo turno, o primeiro turno de 2026 já produziu consequências.</p>
+
+<p>O bolsonarismo demonstrou que sobrevive politicamente a Jair Bolsonaro.</p>
+
+<p>A esquerda foi confrontada com sua dificuldade de renovação.</p>
+
+<p>A direita ampliou substancialmente sua presença parlamentar.</p>
+
+<p>O Senado ganhou protagonismo.</p>
+
+<p>E o Judiciário tornou-se, querendo ou não, parte central da discussão política nacional.</p>
+
+<p>Por isso, considero que 4 de outubro não produziu simplesmente um resultado eleitoral.</p>
+
+<p>Produziu um deslocamento das placas tectônicas da política brasileira.</p>
+
+<p>O desafio do próximo presidente, seja ele quem for, será muito maior do que vencer uma eleição.</p>
+
+<p>Será reconstruir confiança.</p>
+
+<p>Confiança na política.<br>
+Confiança no Congresso.<br>
+Confiança no Executivo.<br>
+E confiança no Judiciário.</p>
+
+<p>Democracias maduras não exigem instituições imunes à crítica.</p>
+
+<p>Exigem instituições suficientemente fortes para serem criticadas, transparentes para prestar contas e independentes para decidir segundo a Constituição — e não segundo a direção dos ventos políticos.</p>
+
+<p>O Brasil que saiu das urnas em 2026 politicamente já não é o mesmo que entrou nelas.</p>
+
+<p>E talvez esse seja o maior recado do primeiro turno.</p>
+
+<p>— <strong>Ricardo Marques</strong><br>
+Advogado e Cientista Político</p>
+`
+  },
+
   noticia15: {
     image: "images/noticias/ricardo-marques-master-botafogo.jpeg",
     title: "Ricardo Marques fortalece parceria com o Master do Botafogo para impulsionar projetos esportivos, sociais e de saúde",
