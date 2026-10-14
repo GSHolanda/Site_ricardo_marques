@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>José Ricardo Marques</title>
     <meta name="description" content="Portfolio pessoal do empresário José Ricardo Marques" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=2026101402" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
   </head>
@@ -17,6 +17,17 @@
     <span class="news-modal-close">&times;</span>
 
     <img id="modal-image" src="" alt="Imagem da notícia">
+
+    <!-- Carrossel (usado quando a notícia tem "media") -->
+    <div id="modal-carousel" class="modal-carousel" hidden>
+      <div class="mc-stage">
+        <div class="mc-slide" id="mc-slide"></div>
+        <button type="button" class="mc-nav mc-prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="mc-nav mc-next" aria-label="Próxima"><i class="fas fa-chevron-right"></i></button>
+        <span class="mc-counter" id="mc-counter"></span>
+      </div>
+      <div class="mc-thumbs" id="mc-thumbs"></div>
+    </div>
 
     <h2 id="modal-title"></h2>
     <p id="modal-date"></p>
@@ -317,6 +328,22 @@ a visão de empresas reunidas dentro da Index.</p>
       </div>
       
       <div class="news-grid">
+
+        <div class="news-card reveal">
+          <div class="news-image">
+            <img src="images/noticias/peru-2026/peru-03.jpg" alt="Ricardo Marques em Machu Picchu, Peru" style="object-position: center 30%;" />
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span><i class="far fa-calendar"></i>Outubro de 2026</span>
+            </div>
+            <h3>Peru — Entre a grandeza de Machu Picchu, a cultura dos Andes e a celebração da vida</h3>
+            <p>Uma viagem de aniversário ao lado de Simone, marcada por história, conhecimento, gastronomia, paisagens extraordinárias e reflexões sobre o patrimônio cultural de uma civilização.</p>
+            <a onclick="openNews('noticia17')" class="read-more" style="cursor:pointer;">
+              Leia mais <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
 
         <div class="news-card reveal">
           <div class="news-image">
@@ -701,8 +728,8 @@ a visão de empresas reunidas dentro da Index.</p>
       </div>
     </footer>
 
-    <script src="news-data.js?v=20261007"></script>
-<script src="script.js"></script>
+    <script src="news-data.js?v=2026101402"></script>
+<script src="script.js?v=2026101402"></script>
 
   </body>
 </html>

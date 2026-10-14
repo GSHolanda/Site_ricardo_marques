@@ -1,5 +1,279 @@
 // news-data.js
 const internalNews = {
+  noticia17: {
+    image: "images/noticias/peru-2026/peru-03.jpg",
+    // Carrossel do modal, na ordem do título: Machu Picchu → cultura dos Andes → celebração da vida
+    // Fotos (.jpg/.png) e vídeos (.mp4/.webm) ficam em images/noticias/peru-2026/
+    media: [
+      "images/noticias/peru-2026/peru-01.jpg",
+      "images/noticias/peru-2026/peru-02-video-machu-picchu.mp4",
+      "images/noticias/peru-2026/peru-03.jpg",
+      "images/noticias/peru-2026/peru-04.jpg",
+      "images/noticias/peru-2026/peru-05.jpg",
+      "images/noticias/peru-2026/peru-06.jpg",
+      "images/noticias/peru-2026/peru-07.jpg",
+      "images/noticias/peru-2026/peru-08.jpg",
+      "images/noticias/peru-2026/peru-09.jpg",
+      "images/noticias/peru-2026/peru-10.jpg",
+      "images/noticias/peru-2026/peru-11.jpg",
+      "images/noticias/peru-2026/peru-12.jpg",
+      "images/noticias/peru-2026/peru-13.jpg",
+      "images/noticias/peru-2026/peru-14.jpg",
+      "images/noticias/peru-2026/peru-15.jpg",
+      "images/noticias/peru-2026/peru-16.jpg",
+      "images/noticias/peru-2026/peru-17.jpg",
+      "images/noticias/peru-2026/peru-18.jpg",
+      "images/noticias/peru-2026/peru-19.jpg",
+      "images/noticias/peru-2026/peru-20.jpg",
+      "images/noticias/peru-2026/peru-21.jpg",
+      "images/noticias/peru-2026/peru-22.jpg",
+      "images/noticias/peru-2026/peru-23.jpg",
+      "images/noticias/peru-2026/peru-24.jpg",
+      "images/noticias/peru-2026/peru-25.jpg",
+      "images/noticias/peru-2026/peru-26.jpg",
+      "images/noticias/peru-2026/peru-27.jpg",
+      "images/noticias/peru-2026/peru-28.jpg",
+      "images/noticias/peru-2026/peru-29.jpg",
+      "images/noticias/peru-2026/peru-30.jpg",
+      "images/noticias/peru-2026/peru-31.jpg",
+      "images/noticias/peru-2026/peru-32.jpg",
+      "images/noticias/peru-2026/peru-33.jpg",
+      "images/noticias/peru-2026/peru-34.jpg",
+      "images/noticias/peru-2026/peru-35.jpg",
+      "images/noticias/peru-2026/peru-36.jpg",
+      "images/noticias/peru-2026/peru-37.jpg",
+      "images/noticias/peru-2026/peru-38.jpg",
+      "images/noticias/peru-2026/peru-39.jpg",
+      "images/noticias/peru-2026/peru-40.jpg",
+      "images/noticias/peru-2026/peru-41.jpg",
+      "images/noticias/peru-2026/peru-42.jpg",
+      "images/noticias/peru-2026/peru-43.jpg",
+      "images/noticias/peru-2026/peru-44.jpg",
+      "images/noticias/peru-2026/peru-45.jpg",
+      "images/noticias/peru-2026/peru-46.jpg",
+      "images/noticias/peru-2026/peru-47.jpg",
+      "images/noticias/peru-2026/peru-48.jpg",
+      "images/noticias/peru-2026/peru-49.jpg",
+      "images/noticias/peru-2026/peru-50.jpg",
+      "images/noticias/peru-2026/peru-51.jpg",
+      "images/noticias/peru-2026/peru-52.jpg",
+      "images/noticias/peru-2026/peru-53.jpg",
+      "images/noticias/peru-2026/peru-54.jpg",
+      "images/noticias/peru-2026/peru-55.jpg",
+      "images/noticias/peru-2026/peru-56.jpg",
+      "images/noticias/peru-2026/peru-57.jpg",
+      "images/noticias/peru-2026/peru-58.jpg",
+      "images/noticias/peru-2026/peru-59.jpg",
+      "images/noticias/peru-2026/peru-60.jpg",
+      "images/noticias/peru-2026/peru-61.jpg",
+      "images/noticias/peru-2026/peru-62.jpg",
+      "images/noticias/peru-2026/peru-63.jpg",
+      "images/noticias/peru-2026/peru-64.jpg",
+      "images/noticias/peru-2026/peru-65.jpg",
+      "images/noticias/peru-2026/peru-66.jpg",
+      "images/noticias/peru-2026/peru-67.jpg",
+      "images/noticias/peru-2026/peru-68.jpg",
+      "images/noticias/peru-2026/peru-69-video-aniversario.mp4",
+      "images/noticias/peru-2026/peru-70.jpg",
+      "images/noticias/peru-2026/peru-71.jpg",
+      "images/noticias/peru-2026/peru-72.jpg",
+      "images/noticias/peru-2026/peru-73.jpg",
+      "images/noticias/peru-2026/peru-74.jpg"
+    ],
+    title: "Peru — Entre a grandeza de Machu Picchu, a cultura dos Andes e a celebração da vida",
+    date: "Outubro de 2026",
+    text: `
+<p><em>Uma viagem de aniversário ao lado de Simone, marcada por história, conhecimento, gastronomia, paisagens extraordinárias e reflexões sobre o patrimônio cultural de uma civilização.</em></p>
+
+<p>Por Ricardo Marques | Outubro de 2026</p>
+
+<p>Viajar sempre representou, para mim, muito mais do que conhecer novos lugares. É uma oportunidade de ampliar horizontes, compreender sociedades, observar diferentes modelos de desenvolvimento e reconhecer, na história e na cultura, elementos fundamentais da identidade dos povos.</p>
+
+<p>Foi com esse espírito que escolhi o Peru para celebrar meu aniversário, acompanhado de Simone.</p>
+
+<p>Entre os dias 6 e 12 de outubro, percorremos paisagens dos Andes, conhecemos experiências gastronômicas, observamos a vida cotidiana de Cusco e do Vale Sagrado e tivemos o privilégio de visitar Machu Picchu, um dos mais extraordinários patrimônios culturais da humanidade.</p>
+
+<p>Mais do que uma viagem de comemoração, foi uma experiência de aprendizado e reflexão.</p>
+
+<p><strong>6 de outubro — Cusco: as primeiras impressões de uma cidade histórica</strong></p>
+
+<p>Nossa viagem começou em Brasília, com conexão em Lima e destino a Cusco.</p>
+
+<p>Chegar à antiga capital do Império Inca é encontrar uma cidade em que diferentes períodos históricos permanecem visíveis no cotidiano.</p>
+
+<p>Cusco conserva traços de sua organização urbana pré-colombiana, ao mesmo tempo que apresenta igrejas, casarões e praças construídos durante a presença espanhola.</p>
+
+<p>Instalados inicialmente no Novotel Cusco, próximo ao centro histórico, começamos a conhecer o ambiente da cidade.</p>
+
+<p>As primeiras impressões revelaram uma realidade de contrastes. O turismo movimenta restaurantes, hotéis, transportes e atividades artesanais, mas também é possível perceber as dificuldades econômicas enfrentadas por parte da população.</p>
+
+<p>Essa convivência entre patrimônio histórico, serviços turísticos e desigualdades sociais merece atenção.</p>
+
+<p>A cultura constitui uma importante fonte de oportunidades, mas sua valorização precisa estar associada à inclusão e ao desenvolvimento das comunidades que a preservam.</p>
+
+<p>À noite, tivemos nossa primeira experiência gastronômica no Campo by Morena, onde a criatividade da cozinha peruana contemporânea se revelou em combinações de ingredientes, técnicas e sabores.</p>
+
+<p>O jantar foi um excelente início de viagem e despertou nosso interesse pela diversidade da gastronomia peruana.</p>
+
+<p><strong>7 de outubro — Vale Sagrado: natureza, conhecimento e astronomia</strong></p>
+
+<p>No dia seguinte, alugamos um carro e seguimos em direção ao Vale Sagrado, tendo como destino o Inkaterra Hacienda Urubamba.</p>
+
+<p>A viagem por estrada proporcionou uma aproximação mais direta com a geografia andina: montanhas, áreas agrícolas, pequenos povoados e uma paisagem que ajuda a compreender a relação histórica entre as comunidades e seu território.</p>
+
+<p>O Vale Sagrado não impressiona apenas pela beleza natural. A região permite refletir sobre a importância da agricultura, da água, dos ciclos da natureza e da organização territorial para as civilizações que ali se desenvolveram.</p>
+
+<p>No hotel, participamos de uma caminhada guiada por uma das montanhas da propriedade.</p>
+
+<p>Durante o percurso, tivemos uma apresentação de interpretação astronômica, com explicações sobre constelações e os movimentos aparentes dos corpos celestes ao longo dos meses do ano.</p>
+
+<p>A experiência despertou uma reflexão especial.</p>
+
+<p>Muito antes dos recursos tecnológicos contemporâneos, diferentes civilizações desenvolveram conhecimentos sobre o céu e suas regularidades. Na tradição andina, a observação dos ciclos astronômicos esteve associada à agricultura, à organização do tempo e à vida cerimonial.</p>
+
+<p>A caminhada reuniu atividade física, contemplação e conhecimento — uma combinação que considero especialmente enriquecedora.</p>
+
+<p>Encerramos o dia com um jantar no próprio Inkaterra Hacienda Urubamba, em meio à tranquilidade do Vale Sagrado.</p>
+
+<p><strong>8 de outubro — Um aniversário especial, a caminho de Machu Picchu</strong></p>
+
+<p>O dia do meu aniversário começou com uma das experiências mais marcantes da viagem: o deslocamento em trem panorâmico em direção a Machu Picchu Pueblo.</p>
+
+<p>Ao lado de Simone, acompanhei pelas amplas janelas a transformação da paisagem, com montanhas imponentes, rios e vegetação cada vez mais exuberante.</p>
+
+<p>O percurso é, por si só, uma experiência memorável.</p>
+
+<p>Há algo de especial em comemorar mais um ano de vida diante de uma paisagem que nos convida a refletir sobre o tempo, a natureza e a nossa própria trajetória.</p>
+
+<p>Chegamos a Machu Picchu Pueblo e nos instalamos no Inkaterra Machu Picchu Pueblo Hotel.</p>
+
+<p>A localidade revela outra dimensão da economia peruana: um povoado profundamente ligado ao fluxo de visitantes que chegam para conhecer o santuário histórico.</p>
+
+<p>Restaurantes, hospedagens, comércio e transportes integram uma estrutura econômica construída em torno de um patrimônio cultural de importância mundial.</p>
+
+<p>Foi também o momento de organizar os últimos detalhes para a visita que aconteceria na manhã seguinte.</p>
+
+<p>Meu aniversário teve, assim, um significado diferente: a alegria da companhia de Simone e a expectativa de conhecer pessoalmente um dos lugares mais emblemáticos da história das Américas.</p>
+
+<p><strong>9 de outubro — Machu Picchu: a grandeza de uma civilização</strong></p>
+
+<p>Existem lugares cuja importância ultrapassa a beleza das imagens que os tornaram conhecidos mundialmente.</p>
+
+<p>Machu Picchu é um deles.</p>
+
+<p>Na manhã de 9 de outubro, acompanhados por um excelente guia, realizamos a visita pelo Circuito 2-A, que nos permitiu conhecer diferentes espaços da antiga cidadela e contemplar suas impressionantes construções em meio às montanhas.</p>
+
+<p>Foi, sem dúvida, o ponto culminante da viagem.</p>
+
+<p>A experiência de caminhar por Machu Picchu desperta admiração não apenas pela paisagem, mas pela capacidade técnica e organizacional de seus construtores.</p>
+
+<p>Os terraços, os sistemas de circulação, as estruturas de pedra e a adaptação das edificações ao relevo revelam conhecimentos de engenharia, planejamento e aproveitamento territorial.</p>
+
+<p>Mais do que um conjunto de ruínas, Machu Picchu representa um testemunho da sofisticação alcançada pela civilização inca.</p>
+
+<p>A visita também reforçou minha percepção sobre a importância da preservação do patrimônio cultural.</p>
+
+<p>Ao proteger um sítio histórico, não estamos apenas conservando construções antigas. Estamos preservando conhecimentos, referências identitárias e oportunidades de aprendizado para as futuras gerações.</p>
+
+<p>Acompanhamos atentamente as explicações do guia e registramos fotografias extraordinárias. Entretanto, a maior lembrança não está nas imagens: está na experiência de compreender, ainda que parcialmente, a dimensão histórica daquele lugar.</p>
+
+<p>Machu Picchu nos faz reconhecer que a inteligência humana se manifesta de diferentes maneiras, em diferentes épocas e sociedades.</p>
+
+<p>E que o conhecimento não pertence exclusivamente ao mundo contemporâneo.</p>
+
+<p>Após a visita, retornamos ao Inkaterra Machu Picchu Pueblo para o almoço e seguimos de trem até Ollantaytambo.</p>
+
+<p>De lá, retomamos o carro e a estrada para Cusco, onde havíamos reservado hospedagem no Aranwa Cusco Boutique Hotel.</p>
+
+<p><strong>10 de outubro — Cusco: patrimônio, arquitetura e os contrastes da vida urbana</strong></p>
+
+<p>De volta a Cusco, dedicamos parte da manhã a questões práticas da viagem, incluindo a devolução do veículo alugado e ajustes em nossa hospedagem.</p>
+
+<p>Conseguimos um apartamento mais confortável no Aranwa, hotel instalado em um edifício histórico, cuja ambientação dialoga com o patrimônio arquitetônico da cidade.</p>
+
+<p>Cusco é um exemplo particularmente expressivo de sobreposição histórica.</p>
+
+<p>Sob o domínio espanhol, parte das estruturas incas foi incorporada a novas construções, igrejas e edifícios administrativos. O resultado é uma paisagem urbana na qual diferentes tempos permanecem presentes.</p>
+
+<p>A cidade convida à reflexão sobre os processos de conquista, transformação cultural, resistência e preservação da memória.</p>
+
+<p>Também chama atenção a vitalidade do comércio, a circulação de visitantes e a presença do artesanato como expressão cultural e atividade econômica.</p>
+
+<p>Para quem acompanha políticas públicas, cultura e desenvolvimento, Cusco oferece uma experiência especialmente interessante: mostra o potencial econômico do patrimônio histórico e, ao mesmo tempo, os desafios de distribuir seus benefícios de maneira mais ampla.</p>
+
+<p><strong>11 de outubro — Os últimos encontros com Cusco</strong></p>
+
+<p>Nosso último dia no Peru foi dedicado a uma experiência mais tranquila pela cidade.</p>
+
+<p>Depois de dias intensos, alternando deslocamentos, caminhadas e visitas culturais, aproveitamos para percorrer praças, conhecer o mercado e observar mais de perto a dinâmica cotidiana de Cusco.</p>
+
+<p>Os mercados populares têm uma importância que vai muito além do comércio.</p>
+
+<p>Neles, a diversidade dos produtos, os hábitos de consumo, as relações entre vendedores e compradores e a presença de tradições locais revelam aspectos importantes da identidade de uma sociedade.</p>
+
+<p>Também permanecemos parte do dia no hotel, aproveitando os últimos momentos antes da viagem de retorno.</p>
+
+<p>Para o almoço, escolhemos o Yaku, restaurante que trabalha com referências da culinária peruana e ingredientes associados às diferentes regiões do país.</p>
+
+<p>A gastronomia foi, aliás, um dos elementos mais interessantes de toda a viagem.</p>
+
+<p>Conhecer a cozinha de um país é também conhecer sua história, seus recursos naturais, suas influências culturais e a criatividade de seu povo.</p>
+
+<p>No final da tarde, seguimos para o aeroporto de Cusco, iniciando nosso retorno ao Brasil, com conexão em Lima.</p>
+
+<p><strong>Lima — Uma última impressão sobre o desenvolvimento peruano</strong></p>
+
+<p>Nossa passagem pelo novo Aeroporto Internacional Jorge Chávez, em Lima, proporcionou uma última e surpreendente impressão.</p>
+
+<p>Fiquei particularmente impressionado com a dimensão e a modernidade do terminal.</p>
+
+<p>Depois de conhecer um patrimônio milenar como Machu Picchu, encontrar uma infraestrutura aeroportuária dessa magnitude oferece um contraste significativo entre a herança histórica e as ambições contemporâneas do Peru.</p>
+
+<p>O aeroporto representa investimentos em conectividade, logística e integração internacional.</p>
+
+<p>Essa observação reforça uma ideia que considero importante: cultura, turismo, infraestrutura e desenvolvimento econômico precisam ser compreendidos como dimensões complementares.</p>
+
+<p>Um país que reconhece o valor de seu patrimônio e investe em sua conexão com o mundo amplia as possibilidades de transformar suas potencialidades em oportunidades.</p>
+
+<p>Chegamos a Brasília na manhã de 12 de outubro, trazendo lembranças e reflexões que certamente permanecerão conosco.</p>
+
+<p><strong>A importância de continuar em movimento</strong></p>
+
+<p>Há ainda uma dimensão pessoal que merece registro.</p>
+
+<p>Esta viagem exigiu disposição física e mental.</p>
+
+<p>Cusco está situada a aproximadamente 3.400 metros de altitude, condição que impõe cuidados e exige adaptação. Caminhadas, trilhas, subidas, deslocamentos e mudanças de ambiente fazem parte da experiência e devem ser realizados com atenção aos limites individuais.</p>
+
+<p>A viagem me fez refletir sobre a importância de preservar a saúde, a mobilidade e a disposição para continuar conhecendo o mundo.</p>
+
+<p>A maturidade não precisa significar o abandono da curiosidade, dos projetos ou do desejo de descobrir.</p>
+
+<p>Ao contrário, pode representar uma fase em que a experiência acumulada nos permite observar os lugares com maior profundidade e significado.</p>
+
+<p>Boa forma, para mim, não se resume à aparência física. Está relacionada à autonomia, à qualidade de vida e à capacidade de continuar participando ativamente das experiências que escolhemos viver.</p>
+
+<p>Também significa reconhecer que a natureza, especialmente em grandes altitudes, exige prudência e respeito.</p>
+
+<p><strong>Viajar para compreender</strong></p>
+
+<p>Regresso do Peru com uma convicção fortalecida.</p>
+
+<p>O conhecimento não se constrói exclusivamente nos livros, nas universidades ou nos ambientes profissionais. Ele também nasce da observação direta, do contato com diferentes culturas e da disposição de compreender realidades distintas das nossas.</p>
+
+<p>O Peru nos ofereceu uma extraordinária combinação de história, patrimônio, natureza, gastronomia e contrastes sociais.</p>
+
+<p>Machu Picchu permanecerá como a imagem mais emblemática da viagem. Mas o verdadeiro valor da experiência está no conjunto de aprendizados que ela proporcionou.</p>
+
+<p>Celebrar a vida ao lado de Simone, em meio a uma das paisagens culturais mais importantes do planeta, foi um privilégio.</p>
+
+<p>E talvez essa seja uma das melhores maneiras de comemorar um aniversário: não apenas contando os anos que passaram, mas reconhecendo tudo aquilo que ainda podemos aprender, descobrir e viver.</p>
+
+<p><strong>Ricardo Marques</strong><br>
+Advogado, cientista político, jornalista e gestor público e privado.</p>
+`
+  },
+
   noticia16: {
     image: "images/noticias/eleicoes-2026-artigo.png",
     title: "Eleições 2026: o Brasil que saiu das urnas não é o mesmo que entrou nelas",

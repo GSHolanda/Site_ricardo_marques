@@ -6,6 +6,110 @@ const modalDate = document.getElementById("modal-date");
 const modalText = document.getElementById("modal-text");
 const closeBtn = document.querySelector(".news-modal-close");
 
+// Carrossel do modal
+const carousel = document.getElementById("modal-carousel");
+const carouselSlide = document.getElementById("mc-slide");
+const carouselCounter = document.getElementById("mc-counter");
+const carouselThumbs = document.getElementById("mc-thumbs");
+let carouselItems = [];
+let carouselIndex = 0;
+
+function isVideo(src) {
+  return /\.(mp4|webm|mov|m4v)$/i.test(src);
+}
+
+function showCarouselItem(index) {
+  const total = carouselItems.length;
+  carouselIndex = (index + total) % total;
+  const src = carouselItems[carouselIndex];
+
+  carouselSlide.innerHTML = "";
+  let el;
+  if (isVideo(src)) {
+    el = document.createElement("video");
+    el.src = src + "#t=0.1"; // mostra o primeiro quadro (Safari/iOS)
+    el.controls = true;
+    el.playsInline = true;
+    el.preload = "metadata";
+  } else {
+    el = document.createElement("img");
+    el.src = src;
+    el.alt = `Foto ${carouselIndex + 1} de ${total}`;
+  }
+  carouselSlide.appendChild(el);
+
+  carouselCounter.textContent = `${carouselIndex + 1} / ${total}`;
+
+  carouselThumbs.querySelectorAll(".mc-thumb").forEach((thumb, i) => {
+    thumb.classList.toggle("active", i === carouselIndex);
+  });
+  const activeThumb = carouselThumbs.children[carouselIndex];
+  if (activeThumb) {
+    carouselThumbs.scrollTo({
+      left: activeThumb.offsetLeft - carouselThumbs.clientWidth / 2 + activeThumb.clientWidth / 2,
+      behavior: "smooth"
+    });
+  }
+}
+
+function buildCarousel(media) {
+  carouselItems = media;
+  carouselThumbs.innerHTML = "";
+
+  media.forEach((src, i) => {
+    const thumb = document.createElement("button");
+    thumb.type = "button";
+    thumb.className = "mc-thumb";
+    thumb.setAttribute("aria-label", `Ir para item ${i + 1}`);
+    if (isVideo(src)) {
+      thumb.classList.add("is-video");
+      thumb.innerHTML = '<i class="fas fa-play"></i>';
+    } else {
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = "";
+      img.loading = "lazy";
+      thumb.appendChild(img);
+    }
+    thumb.addEventListener("click", () => showCarouselItem(i));
+    carouselThumbs.appendChild(thumb);
+  });
+
+  showCarouselItem(0);
+}
+
+function closeNews() {
+  modal.style.display = "none";
+  // Para qualquer vídeo que esteja tocando
+  if (carouselSlide) carouselSlide.innerHTML = "";
+}
+
+if (carousel) {
+  carousel.querySelector(".mc-prev").addEventListener("click", () => showCarouselItem(carouselIndex - 1));
+  carousel.querySelector(".mc-next").addEventListener("click", () => showCarouselItem(carouselIndex + 1));
+
+  // Arrastar com o dedo no celular
+  let touchStartX = null;
+  carousel.addEventListener("touchstart", (e) => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+  carousel.addEventListener("touchend", (e) => {
+    if (touchStartX === null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 40) showCarouselItem(carouselIndex + (dx < 0 ? 1 : -1));
+    touchStartX = null;
+  });
+
+  // Setas do teclado
+  document.addEventListener("keydown", (e) => {
+    if (!modal || modal.style.display !== "flex") return;
+    if (e.key === "Escape") closeNews();
+    if (carousel.hidden) return;
+    if (e.key === "ArrowLeft") showCarouselItem(carouselIndex - 1);
+    if (e.key === "ArrowRight") showCarouselItem(carouselIndex + 1);
+  });
+}
+
 
 // Abre modal
 function openNews(key) {
@@ -13,20 +117,30 @@ function openNews(key) {
 
   if (!modal) return; // impede erro em páginas sem modal
 
-  modalImage.src = news.image;
+  if (carousel && news.media && news.media.length) {
+    modalImage.style.display = "none";
+    carousel.hidden = false;
+    buildCarousel(news.media);
+  } else {
+    if (carousel) carousel.hidden = true;
+    modalImage.style.display = "";
+    modalImage.src = news.image;
+  }
+
   modalTitle.textContent = news.title;
   modalDate.textContent = news.date;
   modalText.innerHTML = news.text;
 
+  modal.querySelector(".news-modal-content").scrollTop = 0;
   modal.style.display = "flex";
 }
 
 
 if (closeBtn && modal) {
-  closeBtn.onclick = () => modal.style.display = "none";
+  closeBtn.onclick = closeNews;
 
   window.onclick = (e) => {
-    if (e.target === modal) modal.style.display = "none";
+    if (e.target === modal) closeNews();
   };
 }
 
