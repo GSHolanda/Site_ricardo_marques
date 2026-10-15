@@ -928,7 +928,13 @@ noticia10: {
 },
 
 noticia14: {
-  image: "images/noticias/tritucap-petrotec-parceria.jpg",
+  image: "images/noticias/tritucap-petrotec-1.jpg",
+  media: [
+    "images/noticias/tritucap-petrotec-1.jpg",
+    "images/noticias/tritucap-petrotec-2.jpg",
+    "images/noticias/tritucap-petrotec-3.jpg",
+    "images/noticias/tritucap-petrotec-4.jpg"
+  ],
   title: "Parceria estratégica para acelerar expansão da Tritucap e Petrotec no mercado",
   date: "2026",
   text: `
