@@ -1,5 +1,36 @@
 // news-data.js
 const internalNews = {
+  noticia25: {
+    image: "images/noticias/latam-100-voos.jpg",
+    title: "100 voos: uma trajetória de trabalho, compromisso e dedicação",
+    date: "19 de outubro de 2026",
+    text: `
+<p><strong>100 VOOS. UMA TRAJETÓRIA DE TRABALHO, COMPROMISSO E DEDICAÇÃO.</strong></p>
+
+<p>Na última semana, tive a satisfação de receber uma homenagem da LATAM Airlines por alcançar a marca de 100 voos realizados pela companhia.</p>
+
+<p>Mais do que um reconhecimento pela frequência de viagens, recebi essa homenagem como uma oportunidade de refletir sobre o significado de cada deslocamento.</p>
+
+<p>Mais de 90% desses voos tiveram motivação profissional. Foram viagens dedicadas a reuniões estratégicas, apresentações técnicas, visitas institucionais, desenvolvimento de negócios e construção de relacionamentos.</p>
+
+<p>Nessa trajetória, a SASBIO foi a principal responsável pelo investimento em passagens e logística, viabilizando uma agenda de trabalho voltada à divulgação de soluções, serviços e tecnologias, com atenção permanente à qualidade, à inovação e à abertura de novos mercados.</p>
+
+<p>Por trás de cada embarque existem planejamento, preparação, compromissos assumidos e a convicção de que resultados consistentes exigem presença, perseverança e dedicação.</p>
+
+<p>Empreender, desenvolver negócios e representar uma organização não se resume às decisões tomadas em um escritório. Exige disposição para estar presente, conhecer realidades, ouvir pessoas, apresentar soluções e transformar oportunidades em projetos concretos.</p>
+
+<p>São 100 voos que representam muito mais do que quilômetros percorridos. Representam trabalho, investimento, compromisso e a determinação de continuar construindo.</p>
+
+<p>Registro meu agradecimento à LATAM Airlines pela homenagem e meu reconhecimento aos seus colaboradores, profissionais que contribuem diariamente para tornar possíveis tantos deslocamentos.</p>
+
+<p>À SASBIO, meu reconhecimento pela confiança e pelo investimento nessa jornada de desenvolvimento empresarial.</p>
+
+<p>Seguimos em frente. Porque o verdadeiro valor de uma trajetória não está na distância percorrida, mas no propósito que nos faz seguir adiante.</p>
+
+<p><em>#Liderança #Empreendedorismo #SASBIO #DesenvolvimentoDeNegócios #LATAM #GestãoEmpresarial</em></p>
+`
+  },
+
   noticia17: {
     image: "images/noticias/peru-2026/peru-03.jpg",
     // Carrossel do modal, na ordem do título: Machu Picchu → cultura dos Andes → celebração da vida
