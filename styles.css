@@ -1220,10 +1220,19 @@
   position: absolute;
   right: 16px;
   top: 12px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 2rem;
+  line-height: 1;
   cursor: pointer;
   color: #333;
-  z-index: 2;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 3;
 }
 
 /* Imagem da notícia */
@@ -1438,5 +1447,93 @@
 @media (max-width: 768px) {
   .pdf-box {
     min-width: 280px;
+  }
+}
+
+/* ===== Ajustes para celular ===== */
+@media (max-width: 767px) {
+  /* Topo: enquadra o rosto e coloca o texto sobre uma faixa clara */
+  .hero {
+    align-items: flex-end;
+    padding: 6rem 1.25rem 6rem;
+    background-position: 69% top;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.85) 35%,
+      rgba(255, 255, 255, 0) 60%
+    );
+    pointer-events: none;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-title-group {
+    display: block;
+  }
+
+  /* Botão do menu com área de toque de 44px */
+  .mobile-menu-button {
+    color: var(--dark-gray);
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Contato: altura acompanha o conteúdo e nada passa da tela */
+  .contact-info {
+    height: auto;
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .contact-info a {
+    overflow-wrap: anywhere;
+  }
+
+  /* Rodapé: colunas empilhadas e centralizadas */
+  .footer-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-about,
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-contact li {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .footer-contact i {
+    margin-right: 0;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* Telas bem estreitas: nome do cabeçalho em uma linha ao lado do botão do menu */
+@media (max-width: 380px) {
+  .logo {
+    font-size: 1.3rem;
   }
 }

@@ -258,8 +258,10 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
     
-    // Auto slide change every 5 seconds
-    setInterval(nextSlide, 5000);
+    // Auto slide change every 5 seconds (só quando a página tem slides)
+    if (slides.length) {
+      setInterval(nextSlide, 5000);
+    }
     
     // Contact form submission
     const contactForm = document.querySelector('.contact-form form');
