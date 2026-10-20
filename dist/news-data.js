@@ -1,5 +1,40 @@
 // news-data.js
 const internalNews = {
+  noticia26: {
+    image: "images/noticias/roney-nemer-jantar.jpg",
+    title: "Roney Nemer: uma vitória celebrada entre amigos",
+    date: "20 de outubro de 2026",
+    text: `
+<p><strong>RONEY NEMER: UMA VITÓRIA CELEBRADA ENTRE AMIGOS</strong></p>
+
+<p><em>Ricardo Marques recebe o deputado distrital eleito Roney Nemer em jantar marcado pela amizade, reconhecimento e perspectivas para o futuro do Distrito Federal.</em></p>
+
+<p>A política é construída por projetos, compromissos e realizações, mas também por relações humanas que resistem ao tempo e às circunstâncias.</p>
+
+<p>Foi nesse espírito que Ricardo Marques recebeu, em sua residência, o amigo de longa data Roney Nemer, para um jantar em comemoração à sua vitória eleitoral e ao retorno à Câmara Legislativa do Distrito Federal.</p>
+
+<p>Com três mandatos como deputado distrital, passagem pela Câmara dos Deputados e experiência à frente de secretarias estratégicas em diferentes governos, Roney Nemer retorna ao Legislativo reunindo conhecimento, maturidade política e profundo entendimento das necessidades do Distrito Federal.</p>
+
+<p>Sua trajetória o credencia como um dos parlamentares mais experientes da próxima legislatura, com potencial para desempenhar papel relevante na construção de consensos, na articulação política e no desenvolvimento de políticas públicas.</p>
+
+<p>Politicamente próximo da governadora Celina Leão, Nemer também poderá exercer influência importante no fortalecimento da base governista e na construção de projetos para o futuro do DF.</p>
+
+<p>O encontro, que contou com a presença de seu filho, Tadeu Nemer, e do assessor Guilherme Alves, proporcionou uma conversa sobre política, religião, desenvolvimento econômico e social, além de projetos prioritários para a população brasiliense.</p>
+
+<p>Entretanto, acima das questões políticas, prevaleceu o sentimento de amizade.</p>
+
+<p>Para Ricardo Marques, a vitória de Roney Nemer representa não apenas o reconhecimento de uma trajetória pública, mas também a satisfação pessoal de acompanhar o retorno de um amigo ao Parlamento.</p>
+
+<blockquote>“A política tem seus ciclos, mas a amizade verdadeira permanece. Acompanho a trajetória de Roney há muitos anos e reconheço nele um homem de convicções, experiência e profundo conhecimento do Distrito Federal. Sua vitória merece ser celebrada, sobretudo porque representa o retorno de alguém que ainda tem muito a contribuir para a vida pública.”</blockquote>
+
+<p>Mais que uma celebração eleitoral, o jantar reafirmou uma relação construída sobre confiança, respeito e amizade duradoura.</p>
+
+<p>Porque os mandatos são passageiros, mas a confiança e as amizades verdadeiras permanecem.</p>
+
+<p><em>#RoneyNemer #RicardoMarques #DistritoFederal #Politica #CLDF #Amizade #Desenvolvimento</em></p>
+`
+  },
+
   noticia25: {
     image: "images/noticias/latam-100-voos.jpg",
     title: "100 voos: uma trajetória de trabalho, compromisso e dedicação",
